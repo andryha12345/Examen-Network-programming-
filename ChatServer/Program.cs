@@ -63,6 +63,6 @@ class Program
         }
 
         clients.Remove(client);
-        client.Close();
+        client.Close(); //egrgrg
     }
 }

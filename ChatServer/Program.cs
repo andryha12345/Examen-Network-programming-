@@ -65,7 +65,6 @@ class Program
         clients.Remove(client);
         client.Close(); //egrgrg
         //a
-        //aggagf
        // visual guwno
     }
 }

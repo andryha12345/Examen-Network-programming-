@@ -1,22 +1,44 @@
 ﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
-//
 using ChatServer.HistoryPrivate;
-// тут підключив історію пірдунів
-
 namespace ChatServer;
+
+class ChatMessage
+{
+    public int Id { get; set; }
+    public string Sender { get; set; }
+    public string Text { get; set; }
+    public DateTime Time { get; set; }
+}
 
 class Program
 {
     static List<TcpClient> clients = new();
     static Dictionary<string, string> users = new();
     static Dictionary<TcpClient, string> loginsByClient = new();
+    static List<ChatMessage> messages = new List<ChatMessage>();
+    static int nextId = 1;
 
     static void Main()
     {
-        users.Add("admin", "1234");
-        users.Add("user", "1111");
+        var history = MasHistory.GetLast(1000);
+        foreach (var oldMsg in history)
+        {
+            messages.Add(new ChatMessage
+            {
+                Id = oldMsg.Id,
+                Sender = oldMsg.Sender,
+                Text = oldMsg.Text,
+                Time = oldMsg.Timestamp
+            });
+            if (oldMsg.Id >= nextId) nextId = oldMsg.Id + 1;
+        }
+        Console.WriteLine($"Loaded {messages.Count} messages from history");
+
+        users.Add("Andriy", "3333");
+        users.Add("Maxim", "1111");
+        users.Add("Anna", "2222");
 
         TcpListener server = new(IPAddress.Any, 5000);
         server.Start();
@@ -35,8 +57,6 @@ class Program
     {
         try
         {
-
-
             var stream = client.GetStream();
             var buffer = new byte[1024];
 
@@ -51,20 +71,12 @@ class Program
                 Console.WriteLine($"{login} logged in");
                 loginsByClient[client] = login;
 
-                // Надсилаємо останні 50 повідомлень
+                // Send last 50 messages to new user
                 foreach (var oldMsg in MasHistory.GetLast(50))
                 {
-                    var line = $"[{oldMsg.Timestamp:HH:mm}] {oldMsg.Sender}: {oldMsg.Text}\n";
+                    var line = $"MSG|{oldMsg.Id}|{oldMsg.Sender}|{oldMsg.Text}\n";
                     stream.Write(Encoding.UTF8.GetBytes(line));
                 }
-                // Я то так позаначаю але ти андрій провірь якшо шо якщо треба буде щось поміняти міняй або я поміняю 
-                // можна доречі в дс сидіти і разом то все писати як моральна підримка 
-
-                // ВСІМ ПРИВІТ ЯКЩО ХТОСЬ ТО БУДЕ ДИВИТИСЬ НАПИШЕТЕ ЩОСЬ НИЩЕ В ПРОСТОРІ
-
-
-                //ЦІКАВО  ПРОСТО
-
 
                 while (true)
                 {
@@ -97,20 +109,47 @@ class Program
                             }
                         }
                     }
-                    
-
-                    //foreach (var c in clients.Where(c => c != client))
-                    //{
-                    //    try { c.GetStream().Write(Encoding.UTF8.GetBytes(msg + "\n")); }
-                    //    catch { clients.Remove(c); c.Close(); }
-                    //}
+                    else if (msg.StartsWith("/del "))
+                    {
+                        int msgId;
+                        if (int.TryParse(msg.Substring(5), out msgId))
+                        {
+                            var targetMsg = messages.FirstOrDefault(m => m.Id == msgId);
+                            if (targetMsg != null && targetMsg.Sender == login)
+                            {
+                                messages.Remove(targetMsg);
+                                Console.WriteLine($"Deleted {msgId}, sending DEL to all");
+                                foreach (var c in clients)
+                                {
+                                    try
+                                    {
+                                        c.GetStream().Write(Encoding.UTF8.GetBytes($"DEL|{msgId}\n"));
+                                        Console.WriteLine($"Sent DEL|{msgId} to client");
+                                    }
+                                    catch { }
+                                }
+                            }
+                            else
+                            {
+                                stream.Write(Encoding.UTF8.GetBytes("Error. You can delete only your own messages!\n"));
+                            }
+                        }
+                    }
                     else
                     {
-                        MasHistory.Add(new Message { Sender = login, Text = msg, Timestamp = DateTime.Now });
-
-                        foreach (var c in clients.Where(c => c != client))
+                        var newMsg = new ChatMessage
                         {
-                            try { c.GetStream().Write(Encoding.UTF8.GetBytes($"{login}: {msg}\n")); }
+                            Id = nextId++,
+                            Sender = login,
+                            Text = msg,
+                            Time = DateTime.Now
+                        };
+                        messages.Add(newMsg);
+                        MasHistory.Add(new Message { Id = newMsg.Id, Sender = login, Text = msg, Timestamp = DateTime.Now });
+
+                        foreach (var c in clients)
+                        {
+                            try { c.GetStream().Write(Encoding.UTF8.GetBytes($"MSG|{newMsg.Id}|{newMsg.Sender}|{newMsg.Text}\n")); }
                             catch { clients.Remove(c); c.Close(); }
                         }
                     }
@@ -122,9 +161,6 @@ class Program
                 stream.Write(Encoding.UTF8.GetBytes("Error"));
                 client.Close();
             }
-
-            //clients.Remove(client);
-           // client.Close();
         }
         catch (Exception ex)
         {
@@ -135,11 +171,5 @@ class Program
             clients.Remove(client);
             client.Close();
         }
-
-        //egrgrg
-        //egerg
-        //hello
-        // Hi
-        //win lox
     }
 }

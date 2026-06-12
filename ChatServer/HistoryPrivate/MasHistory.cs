@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace ChatServer.HistoryPrivate
 {
     internal class MasHistory
     {
-
-        // джей сон створюється там де і езе файл 
         private static readonly string FilePath = "messages.json";
         private static readonly object _lock = new object();
         private static List<Message> _messages = new List<Message>();
@@ -41,6 +38,5 @@ namespace ChatServer.HistoryPrivate
                 return _messages.Skip(Math.Max(0, _messages.Count - count)).ToList();
             }
         }
-
     }
 }

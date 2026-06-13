@@ -52,4 +52,9 @@ public partial class LoginWindow : Window
     {
 
     }
+
+    private void btnRegister_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
 }

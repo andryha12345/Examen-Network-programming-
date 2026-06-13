@@ -1,34 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\",
+  "WorkspaceRootPath": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatclient\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatserver\\historyprivate\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\historyprivate\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatclient\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatclient\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatclient\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatserver\\historyprivate\\mashistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatserver\\historyprivate\\mashistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\historyprivate\\mashistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatserver\\historyprivate\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\historyprivate\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatserver\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\rooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\\u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\examen-network-programming-\\chatclient\\roominfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\roominfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +46,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -50,90 +62,120 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoomInfo.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\RoomInfo.cs",
+              "RelativeDocumentMoniker": "ChatClient\\RoomInfo.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\RoomInfo.cs",
+              "RelativeToolTip": "ChatClient\\RoomInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T08:17:41.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Rooms.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatServer\\Rooms.cs",
+              "RelativeDocumentMoniker": "ChatServer\\Rooms.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatServer\\Rooms.cs",
+              "RelativeToolTip": "ChatServer\\Rooms.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T07:24:27.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatServer\\Program.cs",
+              "RelativeDocumentMoniker": "ChatServer\\Program.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatServer\\Program.cs",
+              "RelativeToolTip": "ChatServer\\Program.cs",
+              "ViewState": "AgIAACgBAAAAAAAAAAAUwFMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T22:17:13.347Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "ChatClient\\LoginWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml.cs",
               "RelativeToolTip": "ChatClient\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T08:49:50.242Z"
+              "WhenOpened": "2026-06-12T08:49:50.242Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "ChatClient\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml.cs",
               "RelativeToolTip": "ChatClient\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwFMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-12T08:48:57.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml",
               "RelativeDocumentMoniker": "ChatClient\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml",
               "RelativeToolTip": "ChatClient\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-12T08:48:17.218Z"
+              "WhenOpened": "2026-06-12T08:48:17.218Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "ChatClient\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml",
               "RelativeToolTip": "ChatClient\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-12T08:48:00.645Z"
+              "WhenOpened": "2026-06-12T08:48:00.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "MasHistory.cs",
-              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\MasHistory.cs",
               "RelativeDocumentMoniker": "ChatServer\\HistoryPrivate\\MasHistory.cs",
-              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\MasHistory.cs",
               "RelativeToolTip": "ChatServer\\HistoryPrivate\\MasHistory.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwBEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T08:36:00.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\Message.cs",
-              "RelativeDocumentMoniker": "ChatServer\\HistoryPrivate\\Message.cs",
-              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\Message.cs",
-              "RelativeToolTip": "ChatServer\\HistoryPrivate\\Message.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T08:23:31.128Z"
+              "WhenOpened": "2026-06-12T08:36:00.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\Program.cs",
-              "RelativeDocumentMoniker": "ChatServer\\Program.cs",
-              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\Program.cs",
-              "RelativeToolTip": "ChatServer\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBkAAAAJAAAAAAAAAA==",
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\Message.cs",
+              "RelativeDocumentMoniker": "ChatServer\\HistoryPrivate\\Message.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\Message.cs",
+              "RelativeToolTip": "ChatServer\\HistoryPrivate\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T22:17:13.347Z"
+              "WhenOpened": "2026-06-12T08:23:31.128Z",
+              "EditorCaption": ""
             }
           ]
         }

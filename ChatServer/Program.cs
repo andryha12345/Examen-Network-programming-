@@ -22,6 +22,7 @@ class Program
     static List<TcpClient> clients = new();
     static Dictionary<string, string> users = new();
     static Dictionary<TcpClient, string> loginsByClient = new();
+    static Dictionary<string, string> roles = new();
     static List<Room> rooms = new();
 
     static Dictionary<TcpClient, int> clientRooms = new();
@@ -49,6 +50,10 @@ class Program
         users.Add("Andriy", "3333");
         users.Add("Maxim", "1111");
         users.Add("Anna", "2222");
+
+        roles.Add("Maxim", "Admin");
+        roles.Add("Andriy", "User");
+        roles.Add("Anna", "User");
 
         rooms.Add(new Room(nextRoomId++, "General", "System"));
         rooms.Add(new Room(nextRoomId++, "Games", "System"));
@@ -82,9 +87,25 @@ class Program
             if (users.ContainsKey(login) && users[login] == password)
             {
                 stream.Write(Encoding.UTF8.GetBytes("Congratulations\n"));
+                stream.Write(
+    Encoding.UTF8.GetBytes(
+        $"ROLE|{roles[login]}\n"));
                 Console.WriteLine($"{login} logged in");
                 loginsByClient[client] = login;
                 clientRooms[client] = 1;
+
+                foreach (var c in clients)
+                {
+                    try
+                    {
+                        c.GetStream().Write(
+                            Encoding.UTF8.GetBytes(
+                                $"SYSTEM|{login} joined the chat\n"));
+                    }
+                    catch
+                    {
+                    }
+                }
 
                 SendRoomsList(stream);
                 SendUsersList();
@@ -205,6 +226,59 @@ class Program
                             }
                         }
                     }
+                    else if (msg.StartsWith("/kick "))
+                    {
+                        if (roles[login] != "Admin")
+                        {
+                            stream.Write(
+                                Encoding.UTF8.GetBytes(
+                                    "Only Admin can kick users\n"));
+                            continue;
+                        }
+
+                        string targetUser =
+                            msg.Substring(6).Trim();
+
+                        var targetClient =
+                            loginsByClient.FirstOrDefault(
+                                x => x.Value == targetUser).Key;
+
+                        if (targetClient == null)
+                        {
+                            stream.Write(
+                                Encoding.UTF8.GetBytes(
+                                    "User not found\n"));
+                            continue;
+                        }
+
+                        try
+                        {
+                            targetClient.GetStream().Write(
+                                Encoding.UTF8.GetBytes(
+                                    "You were kicked by Admin\n"));
+
+                            targetClient.Close();
+
+                            foreach (var c in clients)
+                            {
+                                try
+                                {
+                                    c.GetStream().Write(
+                                        Encoding.UTF8.GetBytes(
+                                            $"SYSTEM|{targetUser} was kicked by {login}\n"));
+                                }
+                                catch
+                                {
+                                }
+                            }
+
+                            Console.WriteLine(
+                                $"{targetUser} was kicked by {login}");
+                        }
+                        catch
+                        {
+                        }
+                    }
                     else
                     {
                         var newMsg = new ChatMessage
@@ -256,6 +330,13 @@ class Program
         }
         finally
         {
+            string disconnectedUser = "";
+
+            if (loginsByClient.ContainsKey(client))
+            {
+                disconnectedUser = loginsByClient[client];
+            }
+
             clients.Remove(client);
 
             if (loginsByClient.ContainsKey(client))
@@ -265,6 +346,22 @@ class Program
                 clientRooms.Remove(client);
 
             SendUsersList();
+
+            if (!string.IsNullOrEmpty(disconnectedUser))
+            {
+                foreach (var c in clients)
+                {
+                    try
+                    {
+                        c.GetStream().Write(
+                            Encoding.UTF8.GetBytes(
+                                $"SYSTEM|{disconnectedUser} left the chat\n"));
+                    }
+                    catch
+                    {
+                    }
+                }
+            }
 
             client.Close();
         }

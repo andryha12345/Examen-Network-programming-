@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R62S0tV9LUs=",
+  "dgSpecHash": "TafUSRyQWP0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatClient\\ChatClient.csproj",
+  "projectFilePath": "C:\\Users\\nycha\\OneDrive\\Desktop\\Test\\Examen-Network-programming-\\ChatClient\\ChatClient.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problem reading the cache file C:\\Users\\Користувач\\Examen-Network-programming-\\ChatClient\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatClient\\ChatClient.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatClient\\ChatClient.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

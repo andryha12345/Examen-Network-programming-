@@ -4,28 +4,15 @@
 winexe
 C#
 .cs
-<<<<<<< HEAD
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\
-=======
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
+C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\
 ChatClient
 none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-<<<<<<< HEAD
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\App.xaml
-=======
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\App.xaml
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
+C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\App.xaml
 2-216653475
-<<<<<<< HEAD
 1-1606303973
-5-1482672638
-=======
-
 6-2102093359
->>>>>>> 6788fe20e97d0506f043828586b50a4585ee426a
 2001132932513
 LoginWindow.xaml;MainWindow.xaml;
 

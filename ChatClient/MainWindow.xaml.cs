@@ -10,6 +10,7 @@ namespace ChatClient;
 public partial class MainWindow : Window
 {
     private TcpClient _client;
+    private string _role = "User";
     private NetworkStream _stream;
     private string _username;
 
@@ -67,6 +68,19 @@ public partial class MainWindow : Window
                                     txtCurrentRoom.Text =
                                         "# " + room.Name;
                                 }
+                            });
+
+                            return;
+                        }
+
+                        if (line.StartsWith("ROLE|"))
+                        {
+                            _role = line.Substring(5);
+
+                            Dispatcher.Invoke(() =>
+                            {
+                                Title =
+                                    $"Chat - {_username} ({_role})";
                             });
 
                             return;
@@ -138,7 +152,22 @@ public partial class MainWindow : Window
                             return;
                         }
 
-                       
+                        if (line.StartsWith("SYSTEM|"))
+                        {
+                            string text = line.Substring(7);
+
+                            var msg = new TextBlock();
+                            msg.Text = text;
+                            msg.Foreground =
+                                new SolidColorBrush(Colors.Red);
+                            msg.FontWeight =
+                                FontWeights.Bold;
+
+                            listMessages.Items.Add(msg);
+
+                            return;
+                        }
+
                         if (line.StartsWith("MSG|"))
                         {
                             var parts = line.Split('|');

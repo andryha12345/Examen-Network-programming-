@@ -45,11 +45,7 @@ namespace ChatClient {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< HEAD
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "10.0.7.0")]
-=======
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "10.0.8.0")]
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
         public void InitializeComponent() {
             
             #line 5 "..\..\..\App.xaml"
@@ -64,11 +60,7 @@ namespace ChatClient {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< HEAD
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "10.0.7.0")]
-=======
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "10.0.8.0")]
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
         public static void Main() {
             ChatClient.App app = new ChatClient.App();
             app.InitializeComponent();

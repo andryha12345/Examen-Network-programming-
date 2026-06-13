@@ -44,3 +44,4 @@ C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\n
 C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.pdb
 C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.genruntimeconfig.cache
 C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ref\ChatClient.dll
+C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_Content.g.cs

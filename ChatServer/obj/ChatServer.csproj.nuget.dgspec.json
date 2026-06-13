@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andri\\OneDrive\\Робочий стіл\\MultiRoomChat\\ChatServer\\ChatServer.csproj": {}
+    "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andri\\OneDrive\\Робочий стіл\\MultiRoomChat\\ChatServer\\ChatServer.csproj": {
+    "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andri\\OneDrive\\Робочий стіл\\MultiRoomChat\\ChatServer\\ChatServer.csproj",
+        "projectUniqueName": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
         "projectName": "ChatServer",
-        "projectPath": "C:\\Users\\andri\\OneDrive\\Робочий стіл\\MultiRoomChat\\ChatServer\\ChatServer.csproj",
-        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andri\\OneDrive\\Робочий стіл\\MultiRoomChat\\ChatServer\\obj\\",
+        "projectPath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
+        "packagesPath": "C:\\Users\\nycha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nycha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,10 +26,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
+            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -44,10 +46,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "imports": [
             "net461",
@@ -65,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

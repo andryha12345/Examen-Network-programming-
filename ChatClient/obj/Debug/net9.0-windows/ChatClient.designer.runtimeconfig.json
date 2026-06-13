@@ -12,8 +12,14 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\Користувач\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Користувач\\.nuget\\packages"
+=======
+      "C:\\Users\\nycha\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\nycha\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+>>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,

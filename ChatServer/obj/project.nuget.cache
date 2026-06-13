@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "wH8UMR4y1Ww=",
   "success": true,
   "projectFilePath": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
+=======
+  "dgSpecHash": "MuzxJ+8kR2Y=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
+>>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
   "expectedPackageFiles": [],
   "logs": []
 }

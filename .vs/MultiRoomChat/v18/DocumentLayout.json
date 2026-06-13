@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatclient\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatclient\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatserver\\historyprivate\\mashistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\historyprivate\\mashistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\nycha\\source\\repos\\examen-network-programming-\\chatserver\\historyprivate\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\historyprivate\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChatClient\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "ChatClient\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T08:49:50.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChatClient\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ChatClient\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T08:48:57.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ChatClient\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml",
+              "RelativeToolTip": "ChatClient\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-12T08:48:17.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "ChatClient\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml",
+              "RelativeToolTip": "ChatClient\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-12T08:48:00.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MasHistory.cs",
+              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "RelativeDocumentMoniker": "ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "RelativeToolTip": "ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwBEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T08:36:00.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\Message.cs",
+              "RelativeDocumentMoniker": "ChatServer\\HistoryPrivate\\Message.cs",
+              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\Message.cs",
+              "RelativeToolTip": "ChatServer\\HistoryPrivate\\Message.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T08:23:31.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\Program.cs",
+              "RelativeDocumentMoniker": "ChatServer\\Program.cs",
+              "ToolTip": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\Program.cs",
+              "RelativeToolTip": "ChatServer\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T22:17:13.347Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

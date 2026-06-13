@@ -28,8 +28,10 @@ public partial class LoginWindow : Window
             byte[] buffer = new byte[1024];
             int bytes = await stream.ReadAsync(buffer);
             string response = Encoding.UTF8.GetString(buffer, 0, bytes);
+           
+            MessageBox.Show(response);
 
-            if (response == "Congratulations")
+            if (response.StartsWith("Congratulations"))
             {
                 MainWindow main = new MainWindow(client, stream, login);
                 main.Show();
@@ -44,5 +46,10 @@ public partial class LoginWindow : Window
         {
             txtError.Text = $"Error: {ex.Message}";
         }
+    }
+
+    private void txtServerIp_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+    {
+
     }
 }

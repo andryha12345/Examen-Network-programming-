@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net9.0": {}
   },
@@ -8,37 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Користувач\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\nycha\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
       "projectName": "ChatServer",
       "projectPath": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
       "packagesPath": "C:\\Users\\Користувач\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatServer\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
-      "projectName": "ChatServer",
-      "projectPath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
-      "packagesPath": "C:\\Users\\nycha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\obj\\",
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\Користувач\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\nycha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -46,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -66,11 +47,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-<<<<<<< HEAD
       "SdkAnalysisLevel": "10.0.200"
-=======
-      "SdkAnalysisLevel": "10.0.300"
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
     },
     "frameworks": {
       "net9.0": {
@@ -92,12 +69,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Користувач\\Examen-Network-programming-\\ChatServer\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }

@@ -57,7 +57,6 @@ C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net
 C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\App.g.cs
 C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.cache
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.lref
 C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.baml
 C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.g.resources
 C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig

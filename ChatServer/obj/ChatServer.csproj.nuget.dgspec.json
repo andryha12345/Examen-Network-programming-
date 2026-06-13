@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj": {}
   },
   "projects": {
@@ -13,27 +12,9 @@
         "projectPath": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
         "packagesPath": "C:\\Users\\Користувач\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Користувач\\Examen-Network-programming-\\ChatServer\\obj\\",
-=======
-    "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
-        "projectName": "ChatServer",
-        "projectPath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\ChatServer.csproj",
-        "packagesPath": "C:\\Users\\nycha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nycha\\source\\repos\\Examen-Network-programming-\\ChatServer\\obj\\",
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Користувач\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\nycha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,11 +41,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-<<<<<<< HEAD
         "SdkAnalysisLevel": "10.0.200"
-=======
-        "SdkAnalysisLevel": "10.0.300"
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
       },
       "frameworks": {
         "net9.0": {
@@ -87,11 +63,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
         }
       }
     }

@@ -53,7 +53,76 @@ public partial class MainWindow : Window
                 {
                     Dispatcher.Invoke(() =>
                     {
-                        // Handle delete
+                        if (line.StartsWith("JOINED|"))
+                        {
+                            string roomId =
+                                line.Substring(7);
+
+                            Dispatcher.Invoke(() =>
+                            {
+
+                                listMessages.Items.Clear();
+                                if (listRooms.SelectedItem is RoomInfo room)
+                                {
+                                    txtCurrentRoom.Text =
+                                        "# " + room.Name;
+                                }
+                            });
+
+                            return;
+                        }
+
+                        if (line.StartsWith("USERS|"))
+                        {
+                            string usersData = line.Substring(6);
+
+                            Dispatcher.Invoke(() =>
+                            {
+                                listUsers.Items.Clear();
+
+                                var users =
+                                    usersData.Split(
+                                        ';',
+                                        StringSplitOptions.RemoveEmptyEntries);
+
+                                foreach (var user in users)
+                                {
+                                    listUsers.Items.Add(user);
+                                }
+                            });
+
+                            return;
+                        }
+
+                        if (line.StartsWith("ROOMS|"))
+                        {
+                            string roomsData = line.Substring(6);
+
+                            listRooms.Items.Clear();
+
+                            var rooms =
+                                roomsData.Split(
+                                    ';',
+                                    StringSplitOptions.RemoveEmptyEntries);
+
+                            foreach (var room in rooms)
+                            {
+                                var parts = room.Split(',');
+
+                                if (parts.Length >= 2)
+                                {
+                                    listRooms.Items.Add(
+                                        new RoomInfo
+                                        {
+                                            Id = int.Parse(parts[0]),
+                                            Name = parts[1]
+                                        });
+                                }
+                            }
+
+                            return;
+                        }
+
                         if (line.StartsWith("DEL|"))
                         {
                             int msgId = int.Parse(line.Substring(4));
@@ -69,7 +138,7 @@ public partial class MainWindow : Window
                             return;
                         }
 
-                        // Handle normal message
+                       
                         if (line.StartsWith("MSG|"))
                         {
                             var parts = line.Split('|');
@@ -184,4 +253,36 @@ public partial class MainWindow : Window
             MessageBox.Show("You cannot delete this message!");
         }
     }
+
+    private async void btnCreateRoom_Click(object sender, RoutedEventArgs e)
+    {
+        string roomName =
+            Microsoft.VisualBasic.Interaction.InputBox(
+                "Enter room name:",
+                "Create Room");
+
+        if (string.IsNullOrWhiteSpace(roomName))
+            return;
+
+        await _stream.WriteAsync(
+            Encoding.UTF8.GetBytes(
+                $"CREATE_ROOM|{roomName}\n"));
+    }
+
+    private async void listRooms_MouseDoubleClick(
+    object sender,
+    MouseButtonEventArgs e)
+    {
+        if (listRooms.SelectedItem == null)
+            return;
+
+        RoomInfo room =
+            (RoomInfo)listRooms.SelectedItem;
+
+        await _stream.WriteAsync(
+            Encoding.UTF8.GetBytes(
+                $"JOIN_ROOM|{room.Id}\n"));
+    }
+
+
 }

@@ -11,6 +11,8 @@ public partial class MainWindow : Window
 {
     private TcpClient _client;
     private string _role = "User";
+    private DateTime _lastTypingSent = DateTime.MinValue;
+    private System.Windows.Threading.DispatcherTimer _typingTimer;
     private NetworkStream _stream;
     private string _username;
 
@@ -21,6 +23,18 @@ public partial class MainWindow : Window
         _stream = stream;
         _username = username;
         Title = $"Chat - {username}";
+
+        _typingTimer =
+    new System.Windows.Threading.DispatcherTimer();
+
+        _typingTimer.Interval =
+            TimeSpan.FromSeconds(2);
+
+        _typingTimer.Tick += (s, e) =>
+        {
+            txtTyping.Text = "";
+            _typingTimer.Stop();
+        };
 
         txtMessage.Text = "/msg name text — private message";
         txtMessage.GotFocus += TxtMessage_GotFocus;
@@ -69,6 +83,19 @@ public partial class MainWindow : Window
                                         "# " + room.Name;
                                 }
                             });
+
+                            return;
+                        }
+
+                        if (line.StartsWith("TYPING|"))
+                        {
+                            string user = line.Substring(7);
+
+                            txtTyping.Text =
+                                $"{user} is typing...";
+
+                            _typingTimer.Stop();
+                            _typingTimer.Start();
 
                             return;
                         }
@@ -311,6 +338,26 @@ public partial class MainWindow : Window
         await _stream.WriteAsync(
             Encoding.UTF8.GetBytes(
                 $"JOIN_ROOM|{room.Id}\n"));
+    }
+
+    private async void txtMessage_TextChanged(
+     object sender,
+     TextChangedEventArgs e)
+    {
+        if ((DateTime.Now - _lastTypingSent).TotalSeconds < 1)
+            return;
+
+        _lastTypingSent = DateTime.Now;
+
+        try
+        {
+            await _stream.WriteAsync(
+                Encoding.UTF8.GetBytes(
+                    $"TYPING|{_username}\n"));
+        }
+        catch
+        {
+        }
     }
 
 

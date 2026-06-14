@@ -15,7 +15,7 @@
             <ColumnDefinition Width="220"/>
         </Grid.ColumnDefinitions>
 
-     
+
         <Border Background="#0F172A">
 
             <DockPanel>
@@ -49,13 +49,15 @@
 
         </Border>
 
-        
+
         <Grid Grid.Column="1">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="60"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="70"/>
+                <RowDefinition Height="25"/>
+                <!-- Додано рядок для статусу друку -->
             </Grid.RowDefinitions>
 
             <Border Background="#1E293B">
@@ -97,7 +99,9 @@
                          Background="#374151"
                          Foreground="White"
                          BorderThickness="0"
-                         Padding="10"/>
+                         Padding="10"
+                         TextChanged="txtMessage_TextChanged"/>
+                <!-- Додано подію TextChanged -->
 
                 <Button x:Name="btnSend"
                         Grid.Column="1"
@@ -117,9 +121,17 @@
 
             </Grid>
 
+            <!-- Доданий TextBlock для статусу "друкує" -->
+            <TextBlock x:Name="txtTyping"
+                       Grid.Row="3"
+                       Foreground="Gray"
+                       FontStyle="Italic"
+                       Margin="15,5,15,5"
+                       FontSize="12"/>
+
         </Grid>
 
-       
+
         <Border Grid.Column="2"
                 Background="#0F172A">
 

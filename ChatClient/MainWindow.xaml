@@ -57,7 +57,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="70"/>
                 <RowDefinition Height="25"/>
-                <!-- Додано рядок для статусу друку -->
+                
             </Grid.RowDefinitions>
 
             <Border Background="#1E293B">
@@ -93,6 +93,7 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBox x:Name="txtMessage"
+                         KeyDown="txtMessage_KeyDown"
                          Grid.Column="0"
                          Height="45"
                          VerticalAlignment="Center"
@@ -101,7 +102,7 @@
                          BorderThickness="0"
                          Padding="10"
                          TextChanged="txtMessage_TextChanged"/>
-                <!-- Додано подію TextChanged -->
+                
 
                 <Button x:Name="btnSend"
                         Grid.Column="1"
@@ -121,7 +122,7 @@
 
             </Grid>
 
-            <!-- Доданий TextBlock для статусу "друкує" -->
+            
             <TextBlock x:Name="txtTyping"
                        Grid.Row="3"
                        Foreground="Gray"

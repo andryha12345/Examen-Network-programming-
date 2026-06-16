@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nycha\\OneDrive\\Desktop\\Test\\Examen-Network-programming-\\ChatClient\\ChatClient.csproj",
+      "projectUniqueName": "C:\\Users\\nycha\\OneDrive\\Desktop\\PROJECT TM\\Examen-Network-programming-\\ChatClient\\ChatClient.csproj",
       "projectName": "ChatClient",
-      "projectPath": "C:\\Users\\nycha\\OneDrive\\Desktop\\Test\\Examen-Network-programming-\\ChatClient\\ChatClient.csproj",
+      "projectPath": "C:\\Users\\nycha\\OneDrive\\Desktop\\PROJECT TM\\Examen-Network-programming-\\ChatClient\\ChatClient.csproj",
       "packagesPath": "C:\\Users\\nycha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nycha\\OneDrive\\Desktop\\Test\\Examen-Network-programming-\\ChatClient\\obj\\",
+      "outputPath": "C:\\Users\\nycha\\OneDrive\\Desktop\\PROJECT TM\\Examen-Network-programming-\\ChatClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

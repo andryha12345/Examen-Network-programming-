@@ -68,6 +68,13 @@ public partial class MainWindow : Window
                 {
                     Dispatcher.Invoke(() =>
                     {
+
+                        if (line == "CLEAR_MESSAGES")
+                        {
+                            listMessages.Items.Clear();
+                            return;
+                        }
+
                         if (line.StartsWith("JOINED|"))
                         {
                             string roomId =
@@ -75,8 +82,6 @@ public partial class MainWindow : Window
 
                             Dispatcher.Invoke(() =>
                             {
-
-                                listMessages.Items.Clear();
                                 if (listRooms.SelectedItem is RoomInfo room)
                                 {
                                     txtCurrentRoom.Text =

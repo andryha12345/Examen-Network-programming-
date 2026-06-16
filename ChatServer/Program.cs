@@ -4,8 +4,6 @@ using System.Text;
 using ChatServer.HistoryPrivate;
 using ChatServer.Models;
 
-
-
 namespace ChatServer;
 
 class ChatMessage
@@ -20,7 +18,7 @@ class ChatMessage
 class Program
 {
     static List<TcpClient> clients = new();
-    static List<User> users = new(); 
+    static List<User> users = new();
     static Dictionary<TcpClient, string> loginsByClient = new();
     static HashSet<string> mutedUsers = new();
     static HashSet<string> bannedUsers = new();
@@ -38,6 +36,7 @@ class Program
             messages.Add(new ChatMessage
             {
                 Id = oldMsg.Id,
+                RoomId = oldMsg.RoomId,
                 Sender = oldMsg.Sender,
                 Text = oldMsg.Text,
                 Time = oldMsg.Timestamp
@@ -46,7 +45,6 @@ class Program
         }
         Console.WriteLine($"Loaded {messages.Count} messages from history");
 
-        
         users = UserStorage.Load();
         bannedUsers = BanStorage.Load();
         mutedUsers = MuteStorage.Load();
@@ -119,15 +117,11 @@ class Program
 
             if (login.StartsWith("REGISTER|"))
             {
-                string newLogin =
-                    login.Substring("REGISTER|".Length);
+                string newLogin = login.Substring("REGISTER|".Length);
 
                 if (users.Any(u => u.Login == newLogin))
                 {
-                    stream.Write(
-                        Encoding.UTF8.GetBytes(
-                            "REGISTER_ERROR\n"));
-
+                    stream.Write(Encoding.UTF8.GetBytes("REGISTER_ERROR\n"));
                     client.Close();
                     return;
                 }
@@ -140,11 +134,7 @@ class Program
                 });
 
                 UserStorage.Save(users);
-
-                stream.Write(
-                    Encoding.UTF8.GetBytes(
-                        "REGISTER_OK\n"));
-
+                stream.Write(Encoding.UTF8.GetBytes("REGISTER_OK\n"));
                 client.Close();
                 return;
             }
@@ -156,13 +146,12 @@ class Program
                 return;
             }
 
-            
             var currentUser = users.FirstOrDefault(u => u.Login == login && u.Password == password);
 
             if (currentUser != null)
             {
                 stream.Write(Encoding.UTF8.GetBytes("Congratulations\n"));
-                stream.Write(Encoding.UTF8.GetBytes($"ROLE|{currentUser.Role}\n")); 
+                stream.Write(Encoding.UTF8.GetBytes($"ROLE|{currentUser.Role}\n"));
                 Console.WriteLine($"{login} logged in");
                 loginsByClient[client] = login;
                 clientRooms[client] = 1;
@@ -181,7 +170,6 @@ class Program
                 SendRoomsList(stream);
                 SendUsersList();
 
-                
                 foreach (var oldMsg in MasHistory.GetLast(50))
                 {
                     var line = $"MSG|{oldMsg.Id}|{oldMsg.Sender}|{oldMsg.Text}\n";
@@ -212,8 +200,7 @@ class Program
 
                             try
                             {
-                                c.GetStream().Write(
-                                    Encoding.UTF8.GetBytes(msg));
+                                c.GetStream().Write(Encoding.UTF8.GetBytes(msg));
                             }
                             catch
                             {
@@ -225,46 +212,47 @@ class Program
 
                     if (msg.StartsWith("JOIN_ROOM|"))
                     {
-                        string roomIdText =
-                            msg.Substring("JOIN_ROOM|".Length);
-
+                        string roomIdText = msg.Substring("JOIN_ROOM|".Length);
                         int roomId;
 
                         if (int.TryParse(roomIdText, out roomId))
                         {
                             int oldRoomId = clientRooms[client];
 
+                            stream.Write(
+                                Encoding.UTF8.GetBytes(
+                                    "CLEAR_MESSAGES\n"));
+
+                            var roomMessages =
+                                messages.Where(m => m.RoomId == roomId)
+                                        .TakeLast(100);
+
+                            foreach (var oldMsg in roomMessages)
+                            {
+                                stream.Write(
+                                    Encoding.UTF8.GetBytes(
+                                        $"MSG|{oldMsg.Id}|{oldMsg.Sender}|{oldMsg.Text}\n"));
+                            }
+
                             clientRooms[client] = roomId;
 
-                            string oldRoomName =
-                                rooms.First(r => r.Id == oldRoomId).Name;
-
-                            string newRoomName =
-                                rooms.First(r => r.Id == roomId).Name;
+                            string oldRoomName = rooms.First(r => r.Id == oldRoomId).Name;
+                            string newRoomName = rooms.First(r => r.Id == roomId).Name;
 
                             foreach (var c in clients)
                             {
                                 try
                                 {
-                                    c.GetStream().Write(
-                                        Encoding.UTF8.GetBytes(
-                                            $"SYSTEM|{login} left room {oldRoomName}\n"));
-
-                                    c.GetStream().Write(
-                                        Encoding.UTF8.GetBytes(
-                                            $"SYSTEM|{login} joined room {newRoomName}\n"));
+                                    c.GetStream().Write(Encoding.UTF8.GetBytes($"SYSTEM|{login} left room {oldRoomName}\n"));
+                                    c.GetStream().Write(Encoding.UTF8.GetBytes($"SYSTEM|{login} joined room {newRoomName}\n"));
                                 }
                                 catch
                                 {
                                 }
                             }
 
-                            Console.WriteLine(
-                                $"{login} joined room {newRoomName}");
-
-                            stream.Write(
-                                Encoding.UTF8.GetBytes(
-                                    $"JOINED|{roomId}\n"));
+                            Console.WriteLine($"{login} joined room {newRoomName}");
+                            stream.Write(Encoding.UTF8.GetBytes($"JOINED|{roomId}\n"));
                         }
 
                         continue;
@@ -339,23 +327,18 @@ class Program
                             }
                         }
                     }
-
                     else if (msg == "/serverstats")
                     {
-                        string stats =
-                            $"Users online: {loginsByClient.Count}\n" +
-                            $"Messages: {messages.Count}\n" +
-                            $"Rooms: {rooms.Count}\n" +
-                            $"Banned: {bannedUsers.Count}\n" +
-                            $"Muted: {mutedUsers.Count}\n";
+                        string stats = $"Users online: {loginsByClient.Count}\n" +
+                                       $"Messages: {messages.Count}\n" +
+                                       $"Rooms: {rooms.Count}\n" +
+                                       $"Banned: {bannedUsers.Count}\n" +
+                                       $"Muted: {mutedUsers.Count}\n";
 
-                        stream.Write(
-                            Encoding.UTF8.GetBytes(stats));
+                        stream.Write(Encoding.UTF8.GetBytes(stats));
                     }
-
                     else if (msg.StartsWith("/mute "))
                     {
-                        
                         if (users.First(u => u.Login == login).Role != "Admin")
                         {
                             stream.Write(Encoding.UTF8.GetBytes("Only Admin can mute users\n"));
@@ -389,7 +372,6 @@ class Program
                     }
                     else if (msg.StartsWith("/makeadmin "))
                     {
-                        
                         if (users.First(u => u.Login == login).Role != "Admin")
                         {
                             stream.Write(Encoding.UTF8.GetBytes("Only Admin can make admins\n"));
@@ -408,7 +390,7 @@ class Program
                         if (targetUserObj != null)
                         {
                             targetUserObj.Role = "Admin";
-                            UserStorage.Save(users); 
+                            UserStorage.Save(users);
 
                             foreach (var c in clients)
                             {
@@ -424,31 +406,18 @@ class Program
                             stream.Write(Encoding.UTF8.GetBytes("User not found\n"));
                         }
                     }
-
                     else if (msg.StartsWith("/search "))
                     {
-                        string searchText =
-                            msg.Substring(8).Trim();
-
-                        var found =
-                            messages
-                            .Where(m =>
-                                m.Text.Contains(
-                                    searchText,
-                                    StringComparison.OrdinalIgnoreCase))
-                            .TakeLast(20);
+                        string searchText = msg.Substring(8).Trim();
+                        var found = messages.Where(m => m.Text.Contains(searchText, StringComparison.OrdinalIgnoreCase)).TakeLast(20);
 
                         foreach (var m in found)
                         {
-                            stream.Write(
-                                Encoding.UTF8.GetBytes(
-                                    $"[SEARCH] {m.Sender}: {m.Text}\n"));
+                            stream.Write(Encoding.UTF8.GetBytes($"[SEARCH] {m.Sender}: {m.Text}\n"));
                         }
                     }
-
                     else if (msg.StartsWith("/ban "))
                     {
-                        
                         if (users.First(u => u.Login == login).Role != "Admin")
                         {
                             stream.Write(Encoding.UTF8.GetBytes("Only Admin can ban users\n"));
@@ -475,7 +444,6 @@ class Program
                     }
                     else if (msg.StartsWith("/unban "))
                     {
-                        
                         if (users.First(u => u.Login == login).Role != "Admin")
                         {
                             stream.Write(Encoding.UTF8.GetBytes("Only Admin can unban users\n"));
@@ -497,7 +465,6 @@ class Program
                     }
                     else if (msg.StartsWith("/unmute "))
                     {
-                       
                         if (users.First(u => u.Login == login).Role != "Admin")
                         {
                             stream.Write(Encoding.UTF8.GetBytes("Only Admin can unmute users\n"));
@@ -519,7 +486,6 @@ class Program
                     }
                     else if (msg.StartsWith("/kick "))
                     {
-                        
                         if (users.First(u => u.Login == login).Role != "Admin")
                         {
                             stream.Write(Encoding.UTF8.GetBytes("Only Admin can kick users\n"));
@@ -580,7 +546,16 @@ class Program
                             Time = DateTime.Now
                         };
                         messages.Add(newMsg);
-                        MasHistory.Add(new Message { Id = newMsg.Id, Sender = login, Text = msg, Timestamp = DateTime.Now });
+
+                        
+                        MasHistory.Add(new Message
+                        {
+                            Id = newMsg.Id,
+                            RoomId = newMsg.RoomId,  
+                            Sender = login,
+                            Text = msg,
+                            Timestamp = DateTime.Now
+                        });
 
                         int senderRoom = clientRooms[client];
 

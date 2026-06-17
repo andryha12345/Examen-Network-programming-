@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Media;
 
 namespace ChatClient;
 
@@ -35,10 +36,6 @@ public partial class MainWindow : Window
             txtTyping.Text = "";
             _typingTimer.Stop();
         };
-
-        txtMessage.Text = "/msg name text — private message";
-        txtMessage.GotFocus += TxtMessage_GotFocus;
-        txtMessage.LostFocus += TxtMessage_LostFocus;
 
         Task.Run(async () =>
         {
@@ -207,6 +204,11 @@ public partial class MainWindow : Window
                             string sender = parts[2];
                             string text = parts[3];
 
+                            if (sender != _username)
+                            {
+                                PlayNotificationSound();
+                            }
+
                             bool isMyMessage = (sender == _username);
 
                             var panel = new StackPanel();
@@ -364,6 +366,68 @@ public partial class MainWindow : Window
         {
         }
     }
+    private void PlayNotificationSound()
+    {
+        try
+        {
+            string soundPath = System.IO.Path.Combine(
+                AppDomain.CurrentDomain.BaseDirectory,
+                "notify.wav"
+            );
 
+            if (System.IO.File.Exists(soundPath))
+            {
+                using (var player = new SoundPlayer(soundPath))
+                {
+                    player.Play();
+                }
+            }
+        }
+        catch { }
+    }
+    private void btnEmoji_Click(object sender, RoutedEventArgs e)
+    {
+        var dialog = new EmojiPickerWindow
+        {
+            Owner = this
+        };
+
+        if (dialog.ShowDialog() == true)
+        {
+            int caretIndex = txtMessage.CaretIndex;
+            txtMessage.Text = txtMessage.Text.Insert(caretIndex, dialog.SelectedEmoji);
+            txtMessage.CaretIndex = caretIndex + dialog.SelectedEmoji.Length;
+            txtMessage.Focus();
+        }
+    }
+    private void CopyMessage_Click(object sender, RoutedEventArgs e)
+    {
+        if (listMessages.SelectedItem == null) return;
+
+        string textToCopy = "";
+
+        if (listMessages.SelectedItem is ListBoxItem listBoxItem && listBoxItem.Content is StackPanel panel)
+        {
+            var textBlocks = panel.Children.OfType<TextBlock>().ToList();
+            if (textBlocks.Count >= 2)
+            {
+                textToCopy = textBlocks[1].Text + " " + textBlocks[2].Text;
+            }
+        }
+        else if (listMessages.SelectedItem is TextBlock textBlock)
+        {
+            textToCopy = textBlock.Text;
+        }
+        else
+        {
+            textToCopy = listMessages.SelectedItem?.ToString() ?? "";
+        }
+
+        if (!string.IsNullOrWhiteSpace(textToCopy))
+        {
+            Clipboard.SetText(textToCopy);
+            MessageBox.Show("✅ Повідомлення скопійовано!", "Успіх", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+    }
 
 }

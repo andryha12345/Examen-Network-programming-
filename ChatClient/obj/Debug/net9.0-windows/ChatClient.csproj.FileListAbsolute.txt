@@ -1,118 +1,26 @@
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\bin\Debug\net9.0-windows\ChatClient.exe
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\bin\Debug\net9.0-windows\ChatClient.deps.json
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\bin\Debug\net9.0-windows\ChatClient.runtimeconfig.json
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\bin\Debug\net9.0-windows\ChatClient.dll
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\bin\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\LoginWindow.g.cs
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\MainWindow.g.cs
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\App.g.cs
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.cache
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.lref
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\LoginWindow.baml
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\MainWindow.baml
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.g.resources
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfoInputs.cache
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfo.cs
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.csproj.CoreCompileInputs.cache
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.sourcelink.json
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.dll
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\refint\ChatClient.dll
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ChatClient.genruntimeconfig.cache
-C:\Users\andri\OneDrive\Робочий стіл\MultiRoomChat\ChatClient\obj\Debug\net9.0-windows\ref\ChatClient.dll
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.exe
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.deps.json
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.runtimeconfig.json
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.dll
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.baml
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.g.cs
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.g.cs
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\App.g.cs
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.cache
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.lref
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.baml
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.g.resources
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfoInputs.cache
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfo.cs
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.csproj.CoreCompileInputs.cache
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.sourcelink.json
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.dll
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\refint\ChatClient.dll
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.genruntimeconfig.cache
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ref\ChatClient.dll
-<<<<<<< HEAD
-C:\Users\Користувач\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_Content.g.cs
-=======
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.exe
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.deps.json
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.runtimeconfig.json
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.dll
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.baml
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.g.cs
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.g.cs
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\App.g.cs
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.cache
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.baml
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.g.resources
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfoInputs.cache
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfo.cs
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.csproj.CoreCompileInputs.cache
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.sourcelink.json
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.dll
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\refint\ChatClient.dll
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.genruntimeconfig.cache
-C:\Users\nycha\source\repos\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ref\ChatClient.dll
->>>>>>> e1f8550553dee8558fb7a60cb2bebd42010ff2c6
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.exe
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.deps.json
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.runtimeconfig.json
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.dll
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.baml
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.baml
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.g.cs
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.g.cs
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\App.g.cs
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_Content.g.cs
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.cache
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.g.resources
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfoInputs.cache
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfo.cs
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.csproj.CoreCompileInputs.cache
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.sourcelink.json
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.dll
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\refint\ChatClient.dll
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.genruntimeconfig.cache
-C:\Users\nycha\OneDrive\Desktop\Test\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ref\ChatClient.dll
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.exe
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.deps.json
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.runtimeconfig.json
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.dll
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.baml
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.baml
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.g.cs
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.g.cs
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\App.g.cs
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_Content.g.cs
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.cache
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.g.resources
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfoInputs.cache
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfo.cs
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.csproj.CoreCompileInputs.cache
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.sourcelink.json
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.dll
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\refint\ChatClient.dll
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.pdb
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.genruntimeconfig.cache
-C:\Users\nycha\OneDrive\Desktop\PROJECT TM\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ref\ChatClient.dll
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.exe
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.deps.json
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.runtimeconfig.json
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.dll
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\ChatClient.pdb
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.baml
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\LoginWindow.g.cs
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_Content.g.cs
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient_MarkupCompile.cache
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.g.resources
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.sourcelink.json
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.dll
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\refint\ChatClient.dll
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.pdb
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ChatClient.genruntimeconfig.cache
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\ref\ChatClient.dll
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\bin\Debug\net9.0-windows\notify.wav
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\EmojiPickerWindow.baml
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatClient\obj\Debug\net9.0-windows\EmojiPickerWindow.g.cs

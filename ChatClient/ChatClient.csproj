@@ -10,7 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="notify.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="icon.ico" />
+    <Content Include="notify.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

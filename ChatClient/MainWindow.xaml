@@ -81,31 +81,48 @@
                      Margin="15"
                      Background="#111827"
                      Foreground="White"
-                     BorderThickness="0"/>
+                     BorderThickness="0">
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Копіювати" Click="CopyMessage_Click"/>
+                    </ContextMenu>
+                </ListBox.ContextMenu>
+            </ListBox>
 
-            <Grid Grid.Row="2"
-                  Margin="15">
-
+            <Grid Grid.Row="2" Margin="15">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
                 </Grid.ColumnDefinitions>
 
+                <Button x:Name="btnEmoji"
+                        Grid.Column="0"
+                        Content="😊"
+                        Width="45"
+                        Height="45"
+                        Margin="0,0,10,0"
+                        VerticalAlignment="Center"
+                        Background="#374151"
+                        Foreground="White"
+                        BorderThickness="0"
+                        FontSize="20"
+                        Click="btnEmoji_Click"/>
+
                 <TextBox x:Name="txtMessage"
-                         KeyDown="txtMessage_KeyDown"
-                         Grid.Column="0"
+                         Grid.Column="1"
                          Height="45"
                          VerticalAlignment="Center"
                          Background="#374151"
                          Foreground="White"
                          BorderThickness="0"
                          Padding="10"
+                         KeyDown="txtMessage_KeyDown"
                          TextChanged="txtMessage_TextChanged"/>
-                
 
                 <Button x:Name="btnSend"
-                        Grid.Column="1"
+                        Grid.Column="2"
                         Content="Send"
                         Margin="10,0,0,0"
                         Background="#3B82F6"
@@ -113,16 +130,15 @@
                         Click="btnSend_Click"/>
 
                 <Button x:Name="btnDelete"
-                        Grid.Column="2"
+                        Grid.Column="3"
                         Content="Delete"
                         Margin="10,0,0,0"
                         Background="#EF4444"
                         Foreground="White"
                         Click="btnDelete_Click"/>
-
             </Grid>
 
-            
+
             <TextBlock x:Name="txtTyping"
                        Grid.Row="3"
                        Foreground="Gray"

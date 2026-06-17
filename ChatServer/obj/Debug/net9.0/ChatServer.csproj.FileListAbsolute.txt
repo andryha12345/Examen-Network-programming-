@@ -1,0 +1,15 @@
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\bin\Debug\net9.0\ChatServer.exe
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\bin\Debug\net9.0\ChatServer.deps.json
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\bin\Debug\net9.0\ChatServer.runtimeconfig.json
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\bin\Debug\net9.0\ChatServer.dll
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\bin\Debug\net9.0\ChatServer.pdb
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ChatServer.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ChatServer.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ChatServer.sourcelink.json
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ChatServer.dll
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\refint\ChatServer.dll
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ChatServer.pdb
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ChatServer.genruntimeconfig.cache
+C:\Users\andri\OneDrive\Робочий стіл\Team\Examen-Network-programming-\ChatServer\obj\Debug\net9.0\ref\ChatServer.dll

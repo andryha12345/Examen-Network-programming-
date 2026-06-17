@@ -1,0 +1,209 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatclient\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatclient\\emojipickerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\emojipickerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatclient\\emojipickerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\emojipickerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatserver\\historyprivate\\mashistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\historyprivate\\mashistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatserver\\historyprivate\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8DCE8D-95B2-4EE8-94DA-B0D3AC8FC18A}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\historyprivate\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatclient\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatclient\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|c:\\users\\andri\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\team\\examen-network-programming-\\chatclient\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9DD616-8883-4192-9C96-2A2CC8A99DB5}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmojiPickerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\EmojiPickerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChatClient\\EmojiPickerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\EmojiPickerWindow.xaml.cs",
+              "RelativeToolTip": "ChatClient\\EmojiPickerWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T10:22:10.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmojiPickerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\EmojiPickerWindow.xaml",
+              "RelativeDocumentMoniker": "ChatClient\\EmojiPickerWindow.xaml",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\EmojiPickerWindow.xaml",
+              "RelativeToolTip": "ChatClient\\EmojiPickerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-17T10:13:58.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MasHistory.cs",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "RelativeDocumentMoniker": "ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "RelativeToolTip": "ChatServer\\HistoryPrivate\\MasHistory.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwB0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T14:18:50.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "ChatClient\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml",
+              "RelativeToolTip": "ChatClient\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-12T14:20:22.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChatClient\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ChatClient\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T14:23:53.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ChatClient\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\MainWindow.xaml",
+              "RelativeToolTip": "ChatClient\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-12T14:23:48.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\Message.cs",
+              "RelativeDocumentMoniker": "ChatServer\\HistoryPrivate\\Message.cs",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatServer\\HistoryPrivate\\Message.cs",
+              "RelativeToolTip": "ChatServer\\HistoryPrivate\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T14:18:56.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChatClient\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "ChatClient\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAUwGsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T14:23:43.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatServer\\Program.cs",
+              "RelativeDocumentMoniker": "ChatServer\\Program.cs",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatServer\\Program.cs",
+              "RelativeToolTip": "ChatServer\\Program.cs",
+              "ViewState": "AgIAAIICAAAAAAAAAAAIwJ4CAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T14:18:58.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\App.xaml",
+              "RelativeDocumentMoniker": "ChatClient\\App.xaml",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\App.xaml",
+              "RelativeToolTip": "ChatClient\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-12T14:24:00.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "ChatClient\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\andri\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Team\\Examen-Network-programming-\\ChatClient\\AssemblyInfo.cs",
+              "RelativeToolTip": "ChatClient\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T14:20:15.338Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

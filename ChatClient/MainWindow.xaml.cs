@@ -1,0 +1,433 @@
+﻿using System.Net.Sockets;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Media;
+
+namespace ChatClient;
+
+public partial class MainWindow : Window
+{
+    private TcpClient _client;
+    private string _role = "User";
+    private DateTime _lastTypingSent = DateTime.MinValue;
+    private System.Windows.Threading.DispatcherTimer _typingTimer;
+    private NetworkStream _stream;
+    private string _username;
+
+    public MainWindow(TcpClient client, NetworkStream stream, string username)
+    {
+        InitializeComponent();
+        _client = client;
+        _stream = stream;
+        _username = username;
+        Title = $"Chat - {username}";
+
+        _typingTimer =
+    new System.Windows.Threading.DispatcherTimer();
+
+        _typingTimer.Interval =
+            TimeSpan.FromSeconds(2);
+
+        _typingTimer.Tick += (s, e) =>
+        {
+            txtTyping.Text = "";
+            _typingTimer.Stop();
+        };
+
+        Task.Run(async () =>
+        {
+            try { await ListenForMessages(); }
+            catch (Exception ex) { Dispatcher.Invoke(() => MessageBox.Show("Listen error: " + ex.Message)); }
+        });
+    }
+
+    private async Task ListenForMessages()
+    {
+        byte[] buffer = new byte[4096];
+        var sb = new StringBuilder();
+
+        while (true)
+        {
+            int bytes = await _stream.ReadAsync(buffer);
+            if (bytes == 0) break;
+            sb.Append(Encoding.UTF8.GetString(buffer, 0, bytes));
+
+            int newlineIndex;
+            while ((newlineIndex = sb.ToString().IndexOf('\n')) >= 0)
+            {
+                string line = sb.ToString(0, newlineIndex);
+                sb.Remove(0, newlineIndex + 1);
+
+                if (!string.IsNullOrWhiteSpace(line))
+                {
+                    Dispatcher.Invoke(() =>
+                    {
+
+                        if (line == "CLEAR_MESSAGES")
+                        {
+                            listMessages.Items.Clear();
+                            return;
+                        }
+
+                        if (line.StartsWith("JOINED|"))
+                        {
+                            string roomId =
+                                line.Substring(7);
+
+                            Dispatcher.Invoke(() =>
+                            {
+                                if (listRooms.SelectedItem is RoomInfo room)
+                                {
+                                    txtCurrentRoom.Text =
+                                        "# " + room.Name;
+                                }
+                            });
+
+                            return;
+                        }
+
+                        if (line.StartsWith("TYPING|"))
+                        {
+                            string user = line.Substring(7);
+
+                            txtTyping.Text =
+                                $"{user} is typing...";
+
+                            _typingTimer.Stop();
+                            _typingTimer.Start();
+
+                            return;
+                        }
+
+                        if (line.StartsWith("ROLE|"))
+                        {
+                            _role = line.Substring(5);
+
+                            Dispatcher.Invoke(() =>
+                            {
+                                Title =
+                                    $"Chat - {_username} ({_role})";
+                            });
+
+                            return;
+                        }
+
+                        if (line.StartsWith("USERS|"))
+                        {
+                            string usersData = line.Substring(6);
+
+                            Dispatcher.Invoke(() =>
+                            {
+                                listUsers.Items.Clear();
+
+                                var users =
+                                    usersData.Split(
+                                        ';',
+                                        StringSplitOptions.RemoveEmptyEntries);
+
+                                foreach (var user in users)
+                                {
+                                    listUsers.Items.Add(user);
+                                }
+                            });
+
+                            return;
+                        }
+
+                        if (line.StartsWith("ROOMS|"))
+                        {
+                            string roomsData = line.Substring(6);
+
+                            listRooms.Items.Clear();
+
+                            var rooms =
+                                roomsData.Split(
+                                    ';',
+                                    StringSplitOptions.RemoveEmptyEntries);
+
+                            foreach (var room in rooms)
+                            {
+                                var parts = room.Split(',');
+
+                                if (parts.Length >= 2)
+                                {
+                                    listRooms.Items.Add(
+                                        new RoomInfo
+                                        {
+                                            Id = int.Parse(parts[0]),
+                                            Name = parts[1]
+                                        });
+                                }
+                            }
+
+                            return;
+                        }
+
+                        if (line.StartsWith("DEL|"))
+                        {
+                            int msgId = int.Parse(line.Substring(4));
+                            for (int i = 0; i < listMessages.Items.Count; i++)
+                            {
+                                var item = listMessages.Items[i] as ListBoxItem;
+                                if (item != null && item.Tag != null && (int)item.Tag == msgId)
+                                {
+                                    listMessages.Items.RemoveAt(i);
+                                    break;
+                                }
+                            }
+                            return;
+                        }
+
+                        if (line.StartsWith("SYSTEM|"))
+                        {
+                            string text = line.Substring(7);
+
+                            var msg = new TextBlock();
+                            msg.Text = text;
+                            msg.Foreground =
+                                new SolidColorBrush(Colors.Red);
+                            msg.FontWeight =
+                                FontWeights.Bold;
+
+                            listMessages.Items.Add(msg);
+
+                            return;
+                        }
+
+                        if (line.StartsWith("MSG|"))
+                        {
+                            var parts = line.Split('|');
+                            int msgId = int.Parse(parts[1]);
+                            string sender = parts[2];
+                            string text = parts[3];
+
+                            if (sender != _username)
+                            {
+                                PlayNotificationSound();
+                            }
+
+                            bool isMyMessage = (sender == _username);
+
+                            var panel = new StackPanel();
+                            panel.Orientation = Orientation.Horizontal;
+                            panel.Margin = new Thickness(5);
+
+                            var icon = new TextBlock();
+                            icon.Text = "👤";
+                            icon.FontSize = 16;
+                            icon.Margin = new Thickness(0, 0, 10, 0);
+                            icon.VerticalAlignment = VerticalAlignment.Center;
+
+                            var name = new TextBlock();
+                            name.Text = $"{sender}:";
+                            name.FontWeight = FontWeights.Bold;
+                            name.Foreground = new SolidColorBrush(Colors.Blue);
+                            name.FontSize = 14;
+                            name.Margin = new Thickness(0, 0, 8, 0);
+                            name.VerticalAlignment = VerticalAlignment.Center;
+
+                            var messageText = new TextBlock();
+                            messageText.Text = text;
+                            messageText.FontSize = 14;
+                            messageText.TextWrapping = TextWrapping.Wrap;
+                            messageText.VerticalAlignment = VerticalAlignment.Center;
+
+                            panel.Children.Add(icon);
+                            panel.Children.Add(name);
+                            panel.Children.Add(messageText);
+
+                            var item = new ListBoxItem();
+                            item.Content = panel;
+                            item.Tag = msgId;
+
+                            if (isMyMessage)
+                                item.HorizontalContentAlignment = HorizontalAlignment.Right;
+                            else
+                                item.HorizontalContentAlignment = HorizontalAlignment.Left;
+
+                            listMessages.Items.Add(item);
+                            listMessages.ScrollIntoView(item);
+                        }
+                        else if (line.Contains("[PM from") || line.Contains("[PM to"))
+                        {
+                            var msg = new TextBlock();
+                            msg.Text = $"[{DateTime.Now:HH:mm}] {line}";
+                            msg.Foreground = new SolidColorBrush(Colors.Orange);
+                            msg.FontSize = 12;
+                            msg.Margin = new Thickness(5);
+                            listMessages.Items.Add(msg);
+                        }
+                    });
+                }
+            }
+        }
+    }
+
+    private async void btnSend_Click(object sender, RoutedEventArgs e)
+    {
+        if (string.IsNullOrWhiteSpace(txtMessage.Text)) return;
+        string msg = txtMessage.Text;
+        await _stream.WriteAsync(Encoding.UTF8.GetBytes(msg + "\n"));
+        txtMessage.Text = "";
+    }
+
+    private void txtMessage_KeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Enter) btnSend_Click(sender, e);
+    }
+
+    private void TxtMessage_GotFocus(object sender, RoutedEventArgs e)
+    {
+        if (txtMessage.Text == "/msg name text — private message")
+        {
+            txtMessage.Text = "";
+            txtMessage.Foreground = Brushes.Black;
+        }
+    }
+
+    private void TxtMessage_LostFocus(object sender, RoutedEventArgs e)
+    {
+        if (string.IsNullOrWhiteSpace(txtMessage.Text))
+        {
+            txtMessage.Text = "/msg name text — private message";
+            txtMessage.Foreground = Brushes.Gray;
+        }
+    }
+
+    private async void btnDelete_Click(object sender, RoutedEventArgs e)
+    {
+        if (listMessages.SelectedItem == null)
+        {
+            MessageBox.Show("Select a message to delete!");
+            return;
+        }
+
+        var selectedItem = listMessages.SelectedItem as ListBoxItem;
+        if (selectedItem.Tag != null && (int)selectedItem.Tag > 0)
+        {
+            int msgId = (int)selectedItem.Tag;
+            await _stream.WriteAsync(Encoding.UTF8.GetBytes($"/del {msgId}\n"));
+        }
+        else
+        {
+            MessageBox.Show("You cannot delete this message!");
+        }
+    }
+
+    private async void btnCreateRoom_Click(object sender, RoutedEventArgs e)
+    {
+        string roomName =
+            Microsoft.VisualBasic.Interaction.InputBox(
+                "Enter room name:",
+                "Create Room");
+
+        if (string.IsNullOrWhiteSpace(roomName))
+            return;
+
+        await _stream.WriteAsync(
+            Encoding.UTF8.GetBytes(
+                $"CREATE_ROOM|{roomName}\n"));
+    }
+
+    private async void listRooms_MouseDoubleClick(
+    object sender,
+    MouseButtonEventArgs e)
+    {
+        if (listRooms.SelectedItem == null)
+            return;
+
+        RoomInfo room =
+            (RoomInfo)listRooms.SelectedItem;
+
+        await _stream.WriteAsync(
+            Encoding.UTF8.GetBytes(
+                $"JOIN_ROOM|{room.Id}\n"));
+    }
+
+    private async void txtMessage_TextChanged(
+     object sender,
+     TextChangedEventArgs e)
+    {
+        if ((DateTime.Now - _lastTypingSent).TotalSeconds < 1)
+            return;
+
+        _lastTypingSent = DateTime.Now;
+
+        try
+        {
+            await _stream.WriteAsync(
+                Encoding.UTF8.GetBytes(
+                    $"TYPING|{_username}\n"));
+        }
+        catch
+        {
+        }
+    }
+    private void PlayNotificationSound()
+    {
+        try
+        {
+            string soundPath = System.IO.Path.Combine(
+                AppDomain.CurrentDomain.BaseDirectory,
+                "notify.wav"
+            );
+
+            if (System.IO.File.Exists(soundPath))
+            {
+                using (var player = new SoundPlayer(soundPath))
+                {
+                    player.Play();
+                }
+            }
+        }
+        catch { }
+    }
+    private void btnEmoji_Click(object sender, RoutedEventArgs e)
+    {
+        var dialog = new EmojiPickerWindow
+        {
+            Owner = this
+        };
+
+        if (dialog.ShowDialog() == true)
+        {
+            int caretIndex = txtMessage.CaretIndex;
+            txtMessage.Text = txtMessage.Text.Insert(caretIndex, dialog.SelectedEmoji);
+            txtMessage.CaretIndex = caretIndex + dialog.SelectedEmoji.Length;
+            txtMessage.Focus();
+        }
+    }
+    private void CopyMessage_Click(object sender, RoutedEventArgs e)
+    {
+        if (listMessages.SelectedItem == null) return;
+
+        string textToCopy = "";
+
+        if (listMessages.SelectedItem is ListBoxItem listBoxItem && listBoxItem.Content is StackPanel panel)
+        {
+            var textBlocks = panel.Children.OfType<TextBlock>().ToList();
+            if (textBlocks.Count >= 2)
+            {
+                textToCopy = textBlocks[1].Text + " " + textBlocks[2].Text;
+            }
+        }
+        else if (listMessages.SelectedItem is TextBlock textBlock)
+        {
+            textToCopy = textBlock.Text;
+        }
+        else
+        {
+            textToCopy = listMessages.SelectedItem?.ToString() ?? "";
+        }
+
+        if (!string.IsNullOrWhiteSpace(textToCopy))
+        {
+            Clipboard.SetText(textToCopy);
+            MessageBox.Show("✅ Повідомлення скопійовано!", "Успіх", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+    }
+
+}
